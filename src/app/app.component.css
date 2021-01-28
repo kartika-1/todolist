@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    font-family: cursive;
+
+}
+.container{
+    background-color: black;
+    color: #fff;
+}
+
+.row{
+   
+    text-align: center;
+}
+
+.output{
+    text-align: center;
+    
+}
+
+#task{
+
+    margin-top: 10px;
+}
+
+#task2{
+}

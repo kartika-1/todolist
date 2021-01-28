@@ -1,0 +1,36 @@
+
+<div class="container">
+ <h1>ToDo List</h1>
+</div>
+
+
+<div class="row" id="task">
+<div class="col-sm-6">
+    <input type="text" placeholder="type task"  [(ngModel)]="newtask" name="">
+    <button class="btn btn-info" type="submit" (click)="addToList()">ADD</button>
+
+ </div>
+
+
+
+<!-- //output// -->
+<div class="col-sm-4">
+<div class="output"> 
+  
+<div *ngFor="let x of items; let index = index;">
+ <div class="row">
+   <div class="col-sm-6"><p>{{x}}</p></div>
+   <div class="col-sm-4">
+     <button class="btn btn-danger" (click)="deletetask(index)" type="button"  value="Delete">Delete </button>
+   </div>
+
+   
+  
+ </div>
+</div>
+</div>
+
+</div>
+
+
+
